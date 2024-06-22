@@ -1,0 +1,142 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    background-color: #333;
+}
+
+h1, h4, a, p {
+    color: #eee; 
+    text-decoration: none;
+    text-shadow: 1px 1px 10px #333;
+}
+
+.livro > h1, .autor > h1, .autoria > h1 {
+    margin-bottom: 3rem;
+}
+
+.nav-links a {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.livro a, .autor a, .autoria a {
+    padding: 1rem;
+}
+
+.nav-links a:hover {
+    background-color: rgb(236, 30, 30);
+    transition-duration: 0.5s;
+}
+
+.livro a:hover {
+    background-color: rgb(214, 214, 59);
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.autor a:hover {
+    background-color: rgb(231, 41, 41);
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.autoria a:hover {
+    background-color: rgb(48, 48, 226);
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    background-color: rgb(110, 23, 23);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    width: 300px;
+    height: 400px;
+    background-color: rgb(128, 128, 27);
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    width: 300px;
+    height: 400px;
+    background-color: rgb(126, 38, 38);
+}
+
+.autoria {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    width: 300px;
+    height: 400px;
+    background-color: rgb(40, 40, 165);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    background-color: rgb(110, 23, 23);
+    height: 2rem;
+    color: #eee;
+    text-shadow: 1px 1px 10px black;
+}

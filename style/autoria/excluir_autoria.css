@@ -1,0 +1,137 @@
+* { 
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    background-color: #333;
+}
+
+h1, h3, h4, a, p {
+    color: #eee; 
+    text-decoration: none;
+    text-shadow: 1px 1px 10px #333;
+}
+
+.excluir > h1 {
+    margin-bottom: 5rem;
+}
+
+.nav-links a {
+    padding: 2rem;
+}
+
+.nav-links a:hover {
+    background-color: rgb(236, 30, 30);
+    transition-duration: 0.5s;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    background-color: rgb(110, 23, 23);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.excluir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 350px;
+    height: 400px;
+    border-radius: 25px;
+    background-color: rgb(40, 40, 165);
+}
+
+.php-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+input {
+    background: #aaa; 
+    color: #222;
+    text-align: center;
+}
+
+input:hover {
+    background-color: #eee;
+    transition-duration: 0.5s;
+}
+
+input::placeholder {
+    color: #222;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 40px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: 50px;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+input[type=reset] {
+    width: 150px;
+    height: 50px;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+input[type=button] {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    background-color: rgb(110, 23, 23);
+    height: 2rem;
+    color: #eee;
+    text-shadow: 1px 1px 10px black;
+}

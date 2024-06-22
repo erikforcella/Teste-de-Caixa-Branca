@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão</title>
+    <script src="../../script/numeros.js"></script>
+    <link rel="stylesheet" href="../../style/autoria/excluir_autoria.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="../../menu.html"><input type="button" value="<="></a>
+        </div>
+    </nav>
+    <main>
+        <form method="POST">
+            <div class="excluir">
+                <h1>Excluir Autoria</h1>
+                <input type="text" name="txtid" maxlength="5" required onkeypress = "return numeros(window.event.keyCode)" placeholder="Código do autor">
+                <input type="text" name="txtid2" maxlength="5" required onkeypress = "return numeros(window.event.keyCode)" placeholder="Código do livro">
+                <div>
+                    <input type="submit" value="Enviar" name="btnenviar">
+                    <input type="reset" value="Limpar" name="btnlimpar">
+                </div>
+            </div>
+        </form>
+        <div class="php-msg">
+            <?php
+                extract($_POST, EXTR_OVERWRITE);
+                if(isset($btnenviar))
+                {
+                    include_once 'autoria.php';
+                    $a = new autoria();
+                    $a->setCodAutor($txtid);
+                    $a->setCodLivro($txtid2);
+                    echo "<h3>" . $a->exclusao() . "<h3>"; //chamada de método - o $a é o parâmetro enviado
+                }
+            ?>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <h4>Desenvolvido por: Érik Iitirou Forcella - 2º DS A</h4>
+        </div>
+    </footer>
+</body>
+</html>
